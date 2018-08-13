@@ -1,94 +1,176 @@
-*:after {
-    box-sizing: inherit;
-  }
+html {
+  height: 100%;
+}
+  
 
-html{
-    box-sizing: border-box;
+body {
+    margin: 0;
+    position: relative;
     height: 100%;
 }
 
-body{
-    margin: 0;
-    position: relative;
-}   
-
 /* NAV BOX */
 
-.nav-container{
-    max-width: 960px;
-    margin: auto;
+.nav-container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  height: 100px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.nav-insde{
-    height: 50px;
+ul {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  line-height: 20px;
+  height: 20px;
+  padding: 0;
 }
 
-.name p{
-    float:left;
+li {
+  flex: 0 0 auto;
+  list-style: none;
+  padding-top: 42px;
 }
 
-.nav-insde ul{
-    height: 50px;
-    float: right;
-    text-align: right;
-    list-style-type: none;
+a {
+  border-right: 1px solid #cccccc;
+  color: #666666;
+  text-decoration: none;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.nav-insde a{
-    float:right;
-    text-align: right;
+#contact{
+  padding-right: 0;
+  border-right: none;
 }
 
-/* INDEX MAIN BODY BOX */
-
-#container{
-    padding-top: 30px;
-    padding-left: 10px;
-    background: url(../images/bodybg.png);
-    height: 800px;
-    border-top: 2px solid #dddddd;
+li:nth-child(1) {
+  margin-right: auto;
+  margin-left: 0;
+  height: 100px;
+  background: #4aaaa5;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  width: 140px;
+  padding: 0;
+  line-height: 100px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-#container-inside{
-    max-width: 67.23%;
-    margin: auto;
-    background: white;
-    border: 1px solid #dddddd;
+/* MAIN BODY BOX */
+
+#outer-container {
+  background: url(../images/bodybg.png);
+  border-top: 2px solid #dddddd;
+  height: 100%;
 }
 
-#copyright{
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    height: 40px;
-    color: white;
-    background: black; 
-    border-top: 8px solid #4aaaa5;
+.container {
+  width: 960px;
+  margin: 30px auto;
+  height: 500px;
+  background: white;
 }
 
-.profile{
-    clear: both;
-    padding-top: 5%;
-    padding-bottom: 5%;
+#container-inside {
+  max-width: 960px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 24px;
+  margin-left: 24px;
+  background: white;
+  height: 75%;
 }
 
-#Bio{
-    float: right;
-    width: 800px;
-    padding-left: 18px;
-    padding-right: 18px;
-    line-height: 30px;
+.profile {
+  display: flex;
+  clear: both;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
 
-#about{
-    float: left;
-    width: 100%;
-    height: 100px;
-    text-align: justify;
-    color: #4aaaa5;
-    padding-left: 0;
-    justify-content: center;
-    border-bottom: 2px solid #dddddd;
-    
+#Bio {
+  margin: 0;
+  width: 800px;
+  padding-left: 18px;
+  padding-right: 18px;
+  line-height: 30px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #666666;
+}
+
+#about, #contact-header {
+  float: left;
+  width: 100%;
+  height: 100px;
+  text-align: justify;
+  color: #4aaaa5;
+  padding-left: 0;
+  justify-content: center;
+  border-bottom: 2px solid #dddddd;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+#contact-header {
+  margin-bottom: 20px;
+}
+
+#copyright {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  color: white;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.info {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #666666;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+}
+
+input[type=submit] {
+  height: 35px;
+  width: 120px;
+  color: white;
+  background: #4aaaa5;
+  border: none;
+}
+
+.form {
+  padding-top: 30px;
+}
+
+.container-port {
+  height: 850px;
+}
+
+.port-img {
+  display: block;
+  float: left;
+  width: 30.33%;
+  height: 200px;
+  margin: auto;
+  padding: 1.5%;
 }
